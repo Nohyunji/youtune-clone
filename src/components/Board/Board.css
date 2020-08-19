@@ -1,0 +1,154 @@
+#Board {
+  background: #202020;
+  width: 70px;
+  height: 100vh;
+  color: #fff;
+  position: fixed;
+  top: 60px;
+}
+
+/* 클릭 전 */
+
+#Board .board-wrap {
+  height: 100vh;
+}
+
+#Board .board-wrap .board-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  height: 80px;
+}
+
+#Board .board-wrap .board-list:hover {
+  background-color: #313131;
+}
+
+#Board .board-wrap .board-list .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 40%;
+}
+
+#Board .board-wrap .board-list .img > img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+/* 클릭 후 */
+
+#Board .board-click {
+  height: 93%;
+  padding-bottom: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#Board .board-click::-webkit-scrollbar {
+  width: 8px;
+}
+#Board .board-click::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+#Board .board-click::-webkit-scrollbar-thumb {
+  background-color: #444;
+}
+#Board .board-click::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+
+#Board .board-click .line {
+  border-bottom: 1px solid #414141;
+  margin: 10px 0;
+}
+
+#Board .board-click .title {
+  display: flex;
+  align-items: center;
+  padding: 7px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #999;
+}
+
+#Board .board-click .click-list {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  height: 40px;
+}
+
+#Board .board-click .click-list:hover {
+  background-color: #444;
+}
+
+#Board .board-click .click-list > .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  height: 45%;
+}
+
+#Board .board-click .click-list > .img > img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.active {
+  display: block;
+}
+
+.none-active {
+  display: none;
+}
+
+.focus {
+  background-color: #313131;
+}
+
+/* 하단 */
+
+#Board .infor {
+  width: 100%;
+  padding: 10px;
+}
+
+#Board .infor > div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#Board .infor > div:nth-child(1) {
+  margin-bottom: 15px;
+}
+
+#Board .infor > div > div {
+  width: auto;
+  padding: 1px 5px;
+  font-size: 13px;
+  color: #aaaaaa;
+  cursor: pointer;
+}
+
+#Board .infor .detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+}
+
+#Board .infor .detail > div {
+  color: #717171;
+}
+
+@media screen and (max-width: 500px) {
+}

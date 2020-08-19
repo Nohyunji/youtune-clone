@@ -1,0 +1,157 @@
+/* 클릭 전 */
+
+#BoardList {
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#BoardList .infinite-scroll-component__outerdiv {
+  width: 100%;
+}
+
+#BoardList .infinite-scroll-component__outerdiv .infinite-scroll-component {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.menuActive {
+  justify-content: center;
+}
+
+#BoardList .boardList-wrap {
+  width: 340px;
+  height: 310px;
+  margin: 7px;
+}
+
+#BoardList .boardList-wrap a > div:nth-child(1) {
+  width: 340px;
+  height: 190px;
+  position: relative;
+}
+
+#BoardList .boardList-wrap a > div:nth-child(1) > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#BoardList .boardList-wrap .boardList-list {
+  display: flex;
+  padding-top: 15px;
+}
+
+#BoardList .boardList-wrap .boardList-list > div:nth-child(1) {
+  width: 45px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+#BoardList .boardList-wrap .boardList-list > div:nth-child(2) {
+  width: 90%;
+  height: 100%;
+}
+
+#BoardList .boardList-wrap .boardList-list > div:nth-child(2) :nth-child(1) {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* ellipsis line */
+  -webkit-box-orient: vertical;
+}
+
+#BoardList .boardList-wrap .boardList-list > div:nth-child(2) :nth-child(2),
+#BoardList .boardList-wrap .boardList-list > div:nth-child(2) :nth-child(3) {
+  font-size: 14px;
+  color: #aaa;
+}
+
+#BoardList
+  .boardList-wrap
+  .boardList-list
+  > div:nth-child(2)
+  :nth-child(2):hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 1850px) {
+  #BoardList .boardList-wrap {
+    width: 330px;
+    height: 290px;
+  }
+  #BoardList .boardList-wrap a > div:nth-child(1) {
+    width: 320px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  #BoardList {
+    margin-left: 0;
+  }
+
+  #BoardList .boardList-wrap {
+    width: 340px;
+    height: 310px;
+  }
+  #BoardList .boardList-wrap a > div:nth-child(1) {
+    width: 340px;
+    height: 200px;
+  }
+
+  #BoardList .infinite-scroll-component__outerdiv .infinite-scroll-component {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1477px) {
+  #BoardList .boardList-wrap {
+    width: 320px;
+    height: 310px;
+  }
+  #BoardList .boardList-wrap a > div:nth-child(1) {
+    width: 320px;
+    height: 180px;
+  }
+
+  #BoardList .infinite-scroll-component__outerdiv .infinite-scroll-component {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #BoardList {
+    padding: 0;
+  }
+
+  #BoardList .infinite-scroll-component__outerdiv {
+    width: 100%;
+  }
+
+  #BoardList .infinite-scroll-component__outerdiv .infinite-scroll-component {
+    justify-content: center;
+    padding: 0;
+    padding-top: 20px;
+  }
+
+  #BoardList .boardList-wrap {
+    width: 340px;
+    height: 310px;
+  }
+  #BoardList .boardList-wrap a > div:nth-child(1) {
+    width: 340px;
+    height: 200px;
+  }
+}
